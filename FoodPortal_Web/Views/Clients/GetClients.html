@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Get All Clients</title>
+    <script src="../../Scripts/AngularJSCore/angular.min.js"></script>
+    <script src="../../Scripts/AngularModules/Clients/FoodPortal_Clients.js"></script>
+</head>
+<body ng-app="FoodPortal_Clients">
+    <div ng-controller="GetClientsController">
+        <table ng-repeat="c in clients" border="1">
+            <tr>
+                <td>{{c.ClientId}}</td>
+                <td>{{c.Password}}</td>
+                <td>{{c.Name}}</td>
+                <td>{{c.Email}}</td>
+                <td>{{c.Address}}</td>
+                <td>{{c.Contact}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

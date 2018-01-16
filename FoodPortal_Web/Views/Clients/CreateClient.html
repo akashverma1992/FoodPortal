@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create A Client</title>
+    <script src="../../Scripts/AngularJSCore/angular.js"></script>
+    <script src="../../Scripts/AngularModules/Clients/FoodPortal_Clients.js"></script>
+</head>
+<body ng-app="FoodPortal_Clients">
+    <div ng-controller="CreateClientController">
+        Id <input type="number" ng-model="id"/><br/>
+        Name <input ng-model="name"/><br />
+        Password <input type="password" ng-model="password"/><br />
+        Email <input ng-model="email"/><br />
+        Address <input ng-model="address"/><br />
+        Contact <input type="number" ng-model="contact"/><br />
+        <button ng-click="createClient();">Create</button>
+    </div>
+</body></html>
